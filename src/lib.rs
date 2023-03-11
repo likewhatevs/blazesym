@@ -509,7 +509,7 @@ pub enum SymbolSrcCfg {
 /// ...]`.  At the first level, each entry is a list of
 /// `SymbolizedResult`.  [`BlazeSymbolizer::symbolize()`] can return
 /// multiple results of an address due to compiler optimizations.
-#[derive(Clone)]
+#[derive(Clone,deepsize::DeepSizeOf)]
 pub struct SymbolizedResult {
     /// The symbol name that an address may belong to.
     pub symbol: String,

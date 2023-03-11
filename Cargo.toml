@@ -12,6 +12,7 @@ crate-type = ["cdylib", "rlib", "staticlib"]
 [dependencies]
 nix = "0.24.1"
 regex = "*"
+deepsize ="0.2.0"
 
 [build-dependencies]
 cbindgen = "*"
